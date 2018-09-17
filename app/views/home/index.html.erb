@@ -14,6 +14,11 @@
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+      <script>
+      
+      </script>
+
+
       <link rel="icon" href="<%= asset_path('icon.png') %>" >
       
       <link href="<%= asset_path('bootstrap.css') %>" rel="stylesheet">
@@ -64,7 +69,7 @@
             <p class="" style="padding-top: 75px">Introducing.. </p><h3><strong>Tutemark Learning!</strong></h3>
             <p class="" style="text-align:center; margin: 7px;">Aspire to deliver blended solutions for learning needs to fulfill the current Indian student market requirements.
 
-            By blended learning, we mean the composition of <i>good content material</i>, <i>relevant assessments</i> and <i>practice assignments</i> <strong>anytime, anywhere</strong> with personal classic style tution sessions with our qualified and trained experts.</p>
+            By blended learning, we mean the composition of <i>good content material</i>, <i>relevant assessments</i> and <i>practice assignments</i> <strong>anytime, anywhere</strong> with personal classic style tuition sessions with our qualified and trained experts.</p>
             <br>
             
             <h4 class="" style="padding-top: 4px; text-align: left; margin-left: 10px; "><strong>What we are offering to our <mark>students</mark></strong></h4>
@@ -72,12 +77,11 @@
              <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Personalized learning for Physics, Chemistry, Biology and Mathematics with F2F Tutoring Sessions with Knowledge Experts</li>
              <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Good quality learning material for students of class XI and XII - Online Chapters, Practice QAs & Tests and Recommended Videos</li>
              </ul>
-             <button type="button" class="btn btn-primary btn-lg btn-block">Click now for Learning with us</button>
-            <p class="" style=" padding-top: 14px;">For any query or question. Feel free to reach <i class="fa fa-phone"></i> (+91)9354534040 <p>
+             <button type="button" class="btn btn-primary btn-lg btn-block" >Click now for Learning with us</button>
+            <p class="" style=" padding-top: 14px;">For any queries or questions.. Feel free to reach <i class="fa fa-phone"></i> (+91) 9354534040 <p>
            
             
          </div>
-      </div>
       <div class="col-md-6 no-gutter text-center">
          <div id="header" data-speed="2" data-type="background" style="z-index: 1">
             <div id="headslide" class="carousel slide" data-ride="carousel">
@@ -96,12 +100,14 @@
                   </div>
                </div>
             </div>
+
+            <div style="position:relative; bottom:93px;">
+               <div class="col-xs-4" style="position: absolute; padding-top: 5px; padding-left:10px;"><input class="form-control" id="ex1" type="text"></div>
+               <button type="button" class="btn btn-info btn-lg btn-block" onclick="myFunction()" style="text-align: right;">Pls enter your code to get content for today :)</button>
+               <p id="demo" style="color: red; font-size: small; text-align: left;"></p>
+            </div>
          </div>
-            
-         <!--div class="embed-responsive embed-responsive-1by1" style="width: 400px; height: 300px; z-index: 2; background: #ff0000;" >
-           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-         </div-->
-      </div>
+
       </div>
       <div style="clear:both;"></div>
       <!-- script -->

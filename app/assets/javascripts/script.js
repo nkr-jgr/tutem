@@ -96,6 +96,21 @@ $(document).ready(function()
   shuffleme.init(); //filter portfolio
 });
 
+function myFunction() {
+      var x, text;
+
+      // Get the value of the input field with id="numb"
+      x = document.getElementById("ex1").value;
+
+      // If x is Not a Number or less than one or greater than 10 C21ASa1
+      if (x != "C21AMSTp" ) {
+      text = "Please enter a valid Session Code";
+      } else {
+         window.location.href = "https://drive.google.com/file/d/1x7vNuPzqyauj-P5ttqipBNnbng44qqFl/view?usp=sharing";
+         text = "Please wait a second..."
+      }
+      document.getElementById("demo").innerHTML = text;
+      }
 
  
 
