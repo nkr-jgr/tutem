@@ -106,7 +106,7 @@ function myFunction() {
       if (x != "CSRAM" ) {
       text = "Please enter a valid Session Code";
       } else {
-         window.location.href = "https://drive.google.com/file/d/1x5Rywo1BlauBtI0pMYvzbAe1APefkmTN/view?usp=sharing";
+         window.location.href = "https://drive.google.com/file/d/1aQ9Q9VBsqyaqAU4LC3oSYUpmK-S3k62L/view?usp=sharing";
          text = "Please wait a second..."
       }
       document.getElementById("demo").innerHTML = text;
