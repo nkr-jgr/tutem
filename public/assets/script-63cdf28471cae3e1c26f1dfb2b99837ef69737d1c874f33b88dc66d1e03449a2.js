@@ -110,17 +110,21 @@ function myFunction() {
          text = "Please wait a second..."
       }
       document.getElementById("demo").innerHTML = text;
+
+
+      $(document).ready(function(){
+        $('input').bind("enterKey",function(e){
+          alert("Enter key pressed");
+        });
+        $('input').keyup(function(e){
+          if(e.keyCode == 13)
+          {
+            $(this).trigger("enterKey");
+          }
+        });
+      });
 }
-$(document).on("keypress", "input", function(e){
-        if(e.which == 13){
-            var inputVal = $(this).val();
-            var x = document.getElementById("ex1").value;
-            if (x != "CSRAM" ) {
-            text = "Please enter a valid Session Code";
-            alert( inputVal+ "is not a valid code.\nPls Call 9354534040 now.");
-            } else {
-               window.location.href = "https://drive.google.com/file/d/1YHKXHuVobdYYDabHZr3cFmflQKv0qOcP/view?usp=sharing";
-               text = "Please wait a second..."
-            }
-        }
-});
+
+ 
+
+;

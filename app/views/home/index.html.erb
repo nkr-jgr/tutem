@@ -49,7 +49,7 @@
             </div-->
          </div>
          <div style="position: absolute; top: 50px; right: 40px; z-index: 2;">
-            Find Us
+            
             <div class="btn-group mr-2" role="group" aria-label="Second group">
                 <button type="button" class="btn btn-secondary">
                    <a class="fb-ic mr-3" href="http://www.facebook.com/tutemark.learning"><i class="fa fa-lg fa-facebook"> </i></a>
@@ -67,18 +67,22 @@
       <div class="span12">
          <div class="col-md-6 no-gutter text-center fill">
             <p class="" style="padding-top: 75px">Introducing.. </p><h3><strong>Tutemark Learning!</strong></h3>
-            <p class="" style="text-align:center; margin: 7px;">Aspire to deliver blended solutions for learning needs to fulfill the current Indian student market requirements.
+            <p class="" style="text-align:center; margin: 7px;">Aspire to deliver best blended solutions for learning needs to fulfill the current Indian student market requirements.
 
-            By blended learning, we mean the composition of <i>good content material</i>, <i>relevant assessments</i> and <i>practice assignments</i> <strong>anytime, anywhere</strong> with personal classic style tuition sessions with our qualified and trained experts.</p>
+            By blended learning, we mean the composition of <i>good content material</i>, <i>relevant assessments</i> and <i>practice assignments</i> <strong>anytime, anywhere</strong> with personal tuition sessions with our qualified knowledge experts.</p>
             <br>
             
-            <h4 class="" style="padding-top: 4px; text-align: left; margin-left: 10px; "><strong>What we are offering to our <mark>students</mark></strong></h4>
-            <ul class="list-group">
-             <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Personalized learning for Physics, Chemistry, Biology and Mathematics with F2F Tutoring Sessions with Knowledge Experts</li>
-             <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Good quality learning material for students of class XI and XII - Online Chapters, Practice QAs & Tests and Recommended Videos</li>
+            <h4 class="" style="padding-top: 4px; text-align: left; margin-left: 10px; "><strong>What we provides you, <mark>Students</mark></strong></h4>
+            <ul class="list-group" style="font-size: 15.5px; text-align: center;">
+             <li class="list-group-item list-group-item-info"> Free Knowledge Assessment Tests on All Chapters in PCMB  <i class="fa fa-check"></i></li>
+             <li class="list-group-item list-group-item-info"> Personalized sessions by our Knowledge Experts Anyday  <i class="fa fa-check"></i></li>
+             <li class="list-group-item list-group-item-info"> Summary Notes and 12 Practice QAs after Each Session <i class="fa fa-check"></i></li>
+             <li class="list-group-item list-group-item-info"> Online Test for Topics Learned in Week on Sundays <i class="fa fa-check"></i></li>
              </ul>
-             <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href = 'https://goo.gl/forms/TimQ7tpGUxby3MuK2';">Click now for Learning with us</button>
-            <p class="" style=" padding-top: 14px;">For any queries or questions.. Feel free to reach <i class="fa fa-phone"></i> (+91) 9354534040 <p>
+             <div style="position:relative; top:12px;">
+   <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href = 'https://goo.gl/forms/TimQ7tpGUxby3MuK2';" style="text-align: center;">Seems Very Helpful for Learning to You? Register Now!</button>
+</div>
+            <!--p class="" style=" padding-top: 12px;">For any queries or questions.. Feel free to reach <i class="fa fa-phone"></i> (+91) 9354534040 <p-->
            
             
          </div>
@@ -98,20 +102,24 @@
                   </div>
                </div>
             </div>
-            <div style="position: absolute; top: 90px; left: 90px; align-content: right;">
+            <div style="position: absolute; top: 25px; left: 25px; align-content: right;">
                <div >
-                     <img src="<%= asset_path('infograph1.jpg') %>" alt="Slide" width=467px; height=467px; style="opacity: 0.85;">
+                     <img src="<%= asset_path('infograph1.jpg') %>" alt="Slide" width=600px; height=600px; style="opacity: 0.9;">
                </div>
             </div>
-            <div style="position:relative; bottom:93px;">
-               <div class="col-xs-4" style="position: absolute; padding-top: 5px; padding-left:10px;"><input class="form-control" id="ex1" type="text"></div>
-               <button type="button" class="btn btn-info btn-lg btn-block" onclick="myFunction()" style="text-align: right;">Pls enter your code to get content for today :)</button>
-               <p id="demo" style="color: red; font-size: small; text-align: left;"></p>
+            <div style="position:relative; top:-50px;">
+               <div class="col-xs-4" style="position: absolute; padding-top: 5px; padding-right:4px; height: 100%"><input class="form-control" id="ex1" type="text"></div>
+               <button type="button" class="btn btn-info btn-lg btn-block" onclick="myFunction()" style="text-align: right;">Please enter your code to get todays content :)</button>
+               <p id="demo" style="color: red; font-size: small; text-align: left; position:relative; top:-65px;"></p>
             </div>
          </div>
 
       </div>
-      <div style="clear:both;"></div>
+</div>
+      <!-- Footer -->
+      <div style="clear:both;">
+
+      </div>
       <!-- script -->
       <script src="<%= asset_path('jquery.js') %>"></script>
       <script src="<%= asset_path('bootstrap.min.js') %>"></script>
