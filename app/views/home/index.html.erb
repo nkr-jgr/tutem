@@ -24,6 +24,7 @@
       <link href="<%= asset_path('bootstrap.css') %>" rel="stylesheet">
       <link href="<%= asset_path('style.css') %>" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
    </head>
    <body>
       <nav class="navbar navbar-default navbar-fixed-top" style="z-index: 1">
@@ -37,7 +38,7 @@
                </button>
             </div-->
             <a class="navbar-brand" href="#">
-            <img class="logo" src="<%= asset_path('colorlogo.png') %>" alt="logo">
+            <img class="logo" src="<%= asset_path('colorlogo2.png') %>" alt="logo">
             </a>
             
             <!--div class="nav-content hideNav hidden">
@@ -47,8 +48,10 @@
                   
                </ul>
             </div-->
+            
          </div>
-         <div style="position: absolute; top: 50px; right: 40px; z-index: 2;">
+
+         <!--div style="position: absolute; top: 50px; right: 40px; z-index: 2;">
             
             <div class="btn-group mr-2" role="group" aria-label="Second group">
                 <button type="button" class="btn btn-secondary">
@@ -61,35 +64,34 @@
                   <a class="yt-ic mr-3" href="http://tutemarklearning.wordpress.com"><i class="fa fa-wordpress"></i></i></a>
                 </button>
             </div>
-         </div>
+         </div-->
+
       </nav>
       <!-- Header -->
       <div class="span12" style="z-index: 1">
          <div class="col-md-6 no-gutter text-center fill">
             <p class="" style="padding-top: 75px">Introducing.. </p><h3><strong>Tutemark Learning!</strong></h3>
-            <p class="" style="text-align:center; margin: 7px;">Aspire to deliver best blended solutions for learning needs to fulfill the current Indian student market requirements.
-
-            By blended learning, we mean the composition of <i>good content material</i>, <i>relevant assessments</i> and <i>practice assignments</i> <strong>anytime, anywhere</strong> with personal tuition sessions with our qualified knowledge experts.</p>
+            <p class="" style="text-align:center; margin: 7px;">We aspire to deliver blended solutions for learning needs to fulfil the current Indian students market requirements.
+By blended learning solutions we mean, the composition of <i>good content material</i>, <i>relevant assessments</i> and <i>practice assignments</i> <strong>anytime, anywhere</strong> and traditional tutoring classes with the option of individual and group schedules.
+            </p>
             <br>
             
-            <h4 class="" style="padding-top: 4px; text-align: left; margin-left: 10px; "><strong>What we provides you, <mark>Students</mark></strong></h4>
-            <ul class="list-group" style="font-size: 15.5px; text-align: center;">
-             <li class="list-group-item list-group-item-info"> Free Knowledge Assessment Tests on All Chapters in PCMB  <i class="fa fa-check"></i></li>
-             <li class="list-group-item list-group-item-info"> Personalized sessions by our Knowledge Experts Anyday  <i class="fa fa-check"></i></li>
-             <li class="list-group-item list-group-item-info"> Summary Notes and 12 Practice QAs after Each Session <i class="fa fa-check"></i></li>
-             <li class="list-group-item list-group-item-info"> Online Test for Topics Learned in Week on Sundays <i class="fa fa-check"></i></li>
+            <h4 class="" style="padding-top: 4px; text-align: left; margin-left: 10px; "><strong>What we are offering to <mark>Students</mark></strong></h4>
+            <ul class="list-group" style="font-size: 15.5px; line-height: 20px; text-align: center; font-family: 'Walter Turncoat', cursive;">
+             <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Free Knowledge Assessment Tests on All Chapters in PCMB  </li>
+             <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Personalized sessions by our Knowledge Experts Anyday  </li>
+             <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Summary Notes and 12 Practice QAs after Each Session </li>
+             <li class="list-group-item list-group-item-info"><i class="fa fa-check"></i> Online Test for Topics Learned in Week on Sundays </li>
              </ul>
-             <div style="position:relative; top:12px;">
-   <button type="button" class="btn btn-info btn-lg btn-block" onclick="location.href = 'https://goo.gl/forms/TimQ7tpGUxby3MuK2';" style="text-align: center;">Seems Very Helpful for Learning to You? Register Now!</button>
-</div>
-            <!--p class="" style=" padding-top: 12px;">For any queries or questions.. Feel free to reach <i class="fa fa-phone"></i> (+91) 9354534040 <p-->
-           
+             
+            <button type="button" class="btn btn-info btn-md" onclick="location.href = 'https://goo.gl/forms/TimQ7tpGUxby3MuK2';" style="text-align: center;">Register Now!</button>
             
          </div>
       <div class="col-md-6 no-gutter text-center">
          <div id="header" data-speed="2" data-type="background" style="z-index: 1">
             <div id="headslide" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner" role="listbox">
+              
+               <div class="carousel-inner" role="listbox"">
                   
                   <div class="item active">
                      <img src="<%= asset_path('2.jpg') %>" alt="Slide">
@@ -102,16 +104,27 @@
                   </div>
                </div>
             </div>
-            <div style="position: absolute; top: 25px; left: 25px; align-content: right;">
+            <div style="position: absolute; top: 90px; align-content: center;">
                <div >
-                     <img src="<%= asset_path('infograph1.jpg') %>" alt="Slide" width=600px; height=600px; style="opacity: 0.9;">
+               <!--911, 743-->
+                     <img src="<%= asset_path('infograph1.jpg') %>" alt="Slide" width=95%; height=auto; style="opacity: 0.9;">
                </div>
             </div>
-            <div style="position:relative; top:-50px;">
+            <div style="position: absolute; top: 30px; right: 30px">
+              <form class="navbar-form navbar-left role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control"  id="code" placeholder="Enter code">
+                </div>
+                <button type="reset" class="btn btn-primary" onclick="myFunction()">Get Content</button>
+                <p id="demo" style="color: red; font-size: small; text-align: left;"></p>
+              </form>
+              <!--button type="button" class="btn btn-danger navbar-btn">Register <span>For K</span></button-->
+          </div>
+            <!--div style="position:relative; top:-50px;">
                <div class="col-xs-4" style="position: absolute; padding-top: 5px; padding-right:4px; height: 100%"><input class="form-control" id="ex1" type="text"></div>
-               <button type="button" class="btn btn-info btn-lg btn-block" onclick="myFunction()" style="text-align: right;">Please enter your code to get todays content :)</button>
+               <button type="button" class="btn btn-info btn-md" onclick="myFunction()" style="text-align: right;">Please enter your code to get todays content :)</button>
                <p id="demo" style="color: red; font-size: small; text-align: left; position:relative; top:-65px;"></p>
-            </div>
+            </div-->
          </div>
 
       </div>

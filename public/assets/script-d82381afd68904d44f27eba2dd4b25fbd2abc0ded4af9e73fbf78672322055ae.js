@@ -100,28 +100,27 @@ function myFunction() {
       var x, text;
 
       // Get the value of the input field with id="numb"
-      x = document.getElementById("code").value;
+      x = document.getElementById("ex1").value;
 
       // If x is Not a Number or less than one or greater than 10 C21ASa1
       if (x != "CSRAM" ) {
       text = "Please enter a valid Session Code";
       } else {
-         location.href = "https://drive.google.com/open?id=189oeyPWZfU9_M0F6KQ7_yEudQd_HQ6dy";
+         window.location.href = "https://drive.google.com/open?id=189oeyPWZfU9_M0F6KQ7_yEudQd_HQ6dy";
          text = "Please wait a second..."
       }
       document.getElementById("demo").innerHTML = text;
 }
-
-/**$(document).on("keypress", "input", function(e){
+$(document).on("keypress", "input", function(e){
         if(e.which == 13){
             var inputVal = $(this).val();
-            var x = document.getElementById("code").value;
+            var x = document.getElementById("ex1").value;
             if (x != "CSRAM" ) {
             text = "Please enter a valid Session Code";
             alert("'"+inputVal+"'"+ " is not a valid code.\nPls Call 9354534040 now.");
             } else {
-               location.href = "https://drive.google.com/open?id=189oeyPWZfU9_M0F6KQ7_yEudQd_HQ6dy";
+               window.location.href = "https://drive.google.com/open?id=189oeyPWZfU9_M0F6KQ7_yEudQd_HQ6dy";
                text = "Please wait a second..."
             }
         }
-});*/
+});
