@@ -14,10 +14,21 @@
       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-      <script>
-      
-      </script>
-
+      <!--style>
+  #fb-root > div.fb_dialog.fb_dialog_advanced.fb_shrink_active {
+    position: fixed;
+    top: 40px;
+     right: initial !important;
+     left: 18pt;
+     z-index: 9999999 !important;
+  }
+  .fb-customerchat.fb_invisible_flow.fb_iframe_widget iframe {
+    position: fixed;
+    top: 40px;
+     right: initial !important;
+     left: 18pt !important;
+  }
+</style-->
 
       <link rel="icon" href="<%= asset_path('icon.png') %>" >
       
@@ -129,6 +140,7 @@ By blended learning solutions we mean, the composition of <i>good content materi
 
       </div>
 </div>
+
       <!-- Footer -->
       <div style="clear:both; ">
          
@@ -139,5 +151,22 @@ By blended learning solutions we mean, the composition of <i>good content materi
       <script src="<%= asset_path('menu-color.js') %>"></script>
       <script src="<%= asset_path('modernizr.js') %>"></script>
       <script src="<%= asset_path('script.js') %>"></script>
+      <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=install_email
+        page_id="270386716930520"
+        theme_color="#6699cc"
+        minimized="true">
+      </div>
    </body>
 </html>
