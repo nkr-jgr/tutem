@@ -106,7 +106,7 @@ function myFunction() {
       if (x != "CSRAM" ) {
       text = "Please enter a valid Session Code";
       } else {
-         location.href = "https://drive.google.com/open?id=1hy_v02TdQIPWIkFNQUnUeZEZrdKBLTgI";
+         location.href = "http://tutem.herokuapp.com/home/test";
          text = "Please wait a second..."
       }
       document.getElementById("demo").innerHTML = text;

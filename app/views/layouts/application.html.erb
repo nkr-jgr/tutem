@@ -1,14 +1,43 @@
-<!--DOCTYPE html>
-<html>
-  <head>
-    <title>Tutemark</title>
-    <%= csrf_meta_tags %>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <%= csrf_meta_tags %>
+      <title><%= yield(:title) %></title>
+      <!-- Css -->
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+      <!--style>
+  #fb-root > div.fb_dialog.fb_dialog_advanced.fb_shrink_active {
+    position: fixed;
+    top: 40px;
+     right: initial !important;
+     left: 18pt;
+     z-index: 9999999 !important;
+  }
+  .fb-customerchat.fb_invisible_flow.fb_iframe_widget iframe {
+    position: fixed;
+    top: 40px;
+     right: initial !important;
+     left: 18pt !important;
+  }
+</style-->
 
-  <body>
+      <link rel="icon" href="<%= asset_path('icon.png') %>" >
+      
+      <link href="<%= asset_path('bootstrap.css') %>" rel="stylesheet">
+      <link href="<%= asset_path('style.css') %>" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+   </head>
+
+   <body>
     <%= yield %>
   </body>
-</html-->
+</html>

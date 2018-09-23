@@ -9,8 +9,8 @@ body {
     font-family: 'Fauna One', serif;
     font-size: 17px;
     line-height: 1.8!important;
-    min-width:960px; /* Suppose you want minimum width of 1100px*/
-   _width: expression( document.body.clientWidth > 960 ? "960px" : "auto" ); /* sets max-width for IE6 */
+    min-width:1300px; /* Suppose you want minimum width of 1100px*/
+   _width: expression( document.body.clientWidth >1300 ? "1300px" : "auto" ); /* sets max-width for IE6 */
 }
 html {
     overflow-x: hidden;
